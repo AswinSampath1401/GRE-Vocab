@@ -6,13 +6,16 @@ import WordInput from './components/WordInput';
 import 'react-json-pretty/themes/monikai.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WordData from './components/WordData';
+import BarronsWordList from './data/barrons.json';
 
 function App() {
   const [word,setWord] = useState('');
   const [data,setData] = useState('');
+  const [barrons,setBarrons] = useState("No");
 
   useEffect(()=>{
     const fetchData = async ()=>{
+      setBarrons("No");
       await fetch(
         `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
       ).then(response => response.json())
@@ -22,6 +25,16 @@ function App() {
       },(error)=>{
         console.log(error);
       })
+
+      for(let index in BarronsWordList){
+        if(BarronsWordList[index]===word){
+          console.log("----------------------- Found match ----------------");
+          setBarrons("Yes");
+        }
+        else{
+          console.log("Word not match", BarronsWordList[index] ," ", word)
+        }
+      }
     }
     fetchData();
   },[word])
@@ -32,8 +45,9 @@ function App() {
       <GreVocabHeader />
       <WordInput setWord={setWord} />
       <div>
-        <WordData data={data}/>
+        <WordData data={data} barrons={barrons} />
         {/* <JSONPretty data={data}></JSONPretty> */}
+        {barrons}
       </div>
     </div>
     ):(
