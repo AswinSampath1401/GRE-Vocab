@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GRE-Vocab/static/css/main.4d6e2a99.css",
-    "main.js": "/GRE-Vocab/static/js/main.ab2deecb.js",
+    "main.css": "/GRE-Vocab/static/css/main.2a6f43f5.css",
+    "main.js": "/GRE-Vocab/static/js/main.13cf6c25.js",
     "static/js/787.1d3fe108.chunk.js": "/GRE-Vocab/static/js/787.1d3fe108.chunk.js",
     "index.html": "/GRE-Vocab/index.html",
-    "main.4d6e2a99.css.map": "/GRE-Vocab/static/css/main.4d6e2a99.css.map",
-    "main.ab2deecb.js.map": "/GRE-Vocab/static/js/main.ab2deecb.js.map",
+    "main.2a6f43f5.css.map": "/GRE-Vocab/static/css/main.2a6f43f5.css.map",
+    "main.13cf6c25.js.map": "/GRE-Vocab/static/js/main.13cf6c25.js.map",
     "787.1d3fe108.chunk.js.map": "/GRE-Vocab/static/js/787.1d3fe108.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d6e2a99.css",
-    "static/js/main.ab2deecb.js"
+    "static/css/main.2a6f43f5.css",
+    "static/js/main.13cf6c25.js"
   ]
 }
